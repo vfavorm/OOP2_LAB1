@@ -1,6 +1,7 @@
 public class Motorcycle extends Vehicle{
 
     public Motorcycle(String ownerName, String model) {
+        super();
         this.ownerName = ownerName;
         this.model = model;
         this.speed = 0;

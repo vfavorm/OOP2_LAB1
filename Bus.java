@@ -1,6 +1,7 @@
 public class Bus extends Vehicle{
 
     public Bus(String ownerName, String model) {
+        super();
         this.ownerName = ownerName;
         this.model = model;
         this.speed = 0;

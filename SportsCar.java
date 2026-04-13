@@ -1,6 +1,7 @@
 public class SportsCar extends Vehicle implements Automobile{
 
     public SportsCar(String ownerName, String model) {
+        super();
         this.ownerName = ownerName;
         this.model = model;
         this.speed = 0;
@@ -22,12 +23,6 @@ public class SportsCar extends Vehicle implements Automobile{
     @Override
     public void gas() {
         System.out.println("Checking SportsCar gas level...");
-    }
-
-    @Override
-    public void accelerate(int speed) {
-        this.speed = speed;
-        System.out.println("SportsCar is accelerating to " + this.speed + " km/h.");
     }
 
     @Override
