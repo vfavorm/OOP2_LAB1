@@ -1,6 +1,7 @@
 public class Sedan extends Vehicle implements Automobile {
 
     public Sedan(String ownerName, String model) {
+        super();
         this.ownerName = ownerName;
         this.model = model;
         this.speed = 0;
@@ -27,13 +28,6 @@ public class Sedan extends Vehicle implements Automobile {
 
 
     @Override
-    public void accelerate(int speed) {
-        this.speed = speed;
-        System.out.println("Sedan is accelerating to " + this.speed + " km/h.");
-    }
-
-
-    @Override
     public void checkTires() {
         System.out.println("Sedan tire pressure is optimal.");
     }
@@ -48,5 +42,10 @@ public class Sedan extends Vehicle implements Automobile {
     public void checkEngine() {
         System.out.println("Sedan engine is running.");
     }
-    
+
+// Overloaded method to accelerate with a specific speed
+    public void accelerate(int speed) {
+        this.speed = speed;
+        System.out.println("Sedan is accelerating to " + this.speed + " km/h.");
+    }    
 }
